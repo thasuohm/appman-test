@@ -1,0 +1,220 @@
+body {
+  overflow-x: hidden;
+}
+
+input {
+  font-family: "Gaegu", cursive;
+}
+
+.hoverCursor:hover {
+  cursor: pointer;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pl-50 {
+  padding-left: 20px;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.f30 {
+  font-size: 30px;
+}
+
+.titleBar {
+  position: absolute;
+  font-size: 36px;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+.bottomContainer {
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.bottomBar {
+  box-shadow: #d9333387;
+  background-color: #ec5656;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  height: 60px;
+}
+
+.circleBottom {
+  box-shadow: #d9333387;
+  background-color: #ec5656;
+  color: #ffffff;
+  font-size: 60px;
+  width: 10%;
+  margin: 0 auto;
+  border-radius: 50%;
+  border-style: solid #ec5656;
+  z-index: 2;
+  text-align: center;
+  outline: none;
+}
+
+.modalContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: #000000a3;
+}
+
+.modalContent {
+  margin: 25px auto;
+  height: 93%;
+  width: 95%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.cardContainer {
+  max-width: 900px;
+  width: auto;
+  background-color: #f3f4f7;
+  margin: 20px 15px;
+  box-shadow: #d5d6dc;
+  display: flex;
+  padding: 10px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.cardContainer img {
+  height: 200px;
+  width: auto;
+}
+
+.cardContainer:hover {
+  box-shadow: #aeaeae;
+}
+
+.handleCardButton {
+  display: hidden;
+  color: #f3f4f7;
+  font-size: 24px;
+}
+
+.cardContainer:hover > .handleCardButton {
+  display: flex;
+  left: 70%;
+  color: #ec5656;
+  font-size: 24px;
+}
+
+.cardContent {
+  display: flex;
+  width: 100%;
+}
+
+.pokemonInfo {
+  max-width: 500px;
+  width: 100%;
+}
+
+.pokemonInfo img {
+  padding-top: 5px;
+  width: 50px;
+  height: auto;
+}
+
+.pokemonName {
+  font-size: 34px;
+  font-family: "Gaegu", cursive;
+}
+
+.searchBar {
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.searchBar > input {
+  width: 98%;
+  border-color: #e6e6e6;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  font-size: 24px;
+  outline: none;
+}
+
+.searchIcon {
+  width: 40px;
+  margin-top: -45px;
+  margin-right: 15px;
+  float: right;
+  position: relative;
+}
+
+.powerBarContainer {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+  max-width: 450px;
+  width: 90%;
+}
+
+.powerBarContainer > span {
+  width: 80px;
+  margin-left: -15px;
+}
+
+.powerBar {
+  height: 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  background-color: #e4e4e4;
+  box-shadow: #d4d4d4;
+}
+
+.powerBar > span {
+  display: block;
+  height: 100%;
+  border-radius: 19px;
+  background-color: #f3701a;
+  z-index: 2;
+}
+
+.myDeck {
+  display: grid;
+  padding-top: 60px;
+  width: 100%;
+  height: 87%;
+  position: absolute;
+  grid-template-columns: auto auto;
+  overflow-y: scroll;
+}
+
+.deckItem {
+  width: 500px;
+  margin: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: 0 0 5px #d4d4d4;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000a3;
+}

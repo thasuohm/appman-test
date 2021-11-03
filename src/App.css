@@ -85,7 +85,7 @@ input {
   width: auto;
   background-color: #f3f4f7;
   margin: 20px 15px;
-  box-shadow: #d5d6dc;
+  box-shadow: 0 0 10px #d5d6dc;
   display: flex;
   padding: 10px;
   position: relative;
@@ -98,7 +98,7 @@ input {
 }
 
 .cardContainer:hover {
-  box-shadow: #aeaeae;
+ box-shadow: 0 0 10px #aeaeae;
 }
 
 .handleCardButton {

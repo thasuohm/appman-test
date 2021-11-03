@@ -32,8 +32,10 @@ const PokemonCard = (props, { myDeck, addToDeck, removeFromDeck }) => {
     } else if (props.pkc.hp) {
       if (props.pkc.hp >= 100) {
         hp = 100;
-      } else if(props.pkc.hp >= 0){
+      } else if(props.pkc.hp < 100 && props.pkc.hp > 0){
         hp = props.pkc.hp;
+      }else {
+        hp = 0;
       }
     }
 

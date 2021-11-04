@@ -80,29 +80,23 @@ test("is render correct pokemon info", () => {
       {
         cost: ["Psychic", "Colorless", "Colorless"],
         name: "Psychic Burst",
-        text: "",
+        text: "for test",
         damage: "asd+",
         convertedEnergyCost: 3,
       },
       {
         cost: ["Psychic", "Colorless", "Colorless"],
         name: "Psychic Burst2",
-        text: "",
+        text: "for test",
         damage: "asd+",
         convertedEnergyCost: 3,
       },
       {
         cost: ["Psychic", "Colorless", "Colorless"],
         name: "Psychic Burst3",
-        text: "",
+        text: "for test",
         damage: "asd+",
         convertedEnergyCost: 3,
-      },
-    ],
-    weaknesses: [
-      {
-        type: "Psychic",
-        value: "×2",
       },
     ],
   };
@@ -118,4 +112,10 @@ test("is render correct pokemon info", () => {
 
   const strCal = document.getElementById("strStat");
   expect(strCal.style).toHaveProperty("width", "0%");
+
+  const weakCal = document.getElementById("weakStat");
+  expect(weakCal.style).toHaveProperty("width", "0%");
+
+  const cute = screen.queryAllByAltText("cuteIcon");
+  expect(cute).toHaveLength(0);
 });

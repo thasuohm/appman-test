@@ -56,6 +56,10 @@ test("is render correct pokemonCard correct", () => {
 
   const weakCal = document.getElementById("weakStat");
   expect(weakCal.style).toHaveProperty("width", "100%");
+
+  const cute = screen.queryAllByAltText("cute");
+  expect(cute).toHaveLength(5);
+ 
 });
 
 test("is wrong logic cal stat", () => {
@@ -116,6 +120,6 @@ test("is render correct pokemon info", () => {
   const weakCal = document.getElementById("weakStat");
   expect(weakCal.style).toHaveProperty("width", "0%");
 
-  const cute = screen.queryAllByAltText("cuteIcon");
-  expect(cute).toHaveLength(0);
+  const cute = screen.queryAllByAltText("cute");
+  expect(cute).toHaveLength(2);
 });

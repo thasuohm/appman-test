@@ -45,7 +45,7 @@ const Modal = (props, { myDeck }) => {
   };
 
   const getPokemon = useCallback((type, key) => {
-    let url = "http://localhost:3030/api/cards?limit=20&";
+    let url = `${process.env.REACT_APP_API_URL}/cards?limit=20&`;
     if (type && key) {
       url += type + "=" + key;
     }

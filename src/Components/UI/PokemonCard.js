@@ -32,9 +32,9 @@ const PokemonCard = (props, { myDeck, addToDeck, removeFromDeck }) => {
     } else if (props.pkc.hp) {
       if (props.pkc.hp >= 100) {
         hp = 100;
-      } else if(props.pkc.hp < 100 && props.pkc.hp > 0){
+      } else if (props.pkc.hp < 100 && props.pkc.hp > 0) {
         hp = props.pkc.hp;
-      }else {
+      } else {
         hp = 0;
       }
     }
@@ -90,7 +90,7 @@ const PokemonCard = (props, { myDeck, addToDeck, removeFromDeck }) => {
           <div className="f20 powerBarContainer">
             <span>HP</span>{" "}
             <div className="powerBar">
-              <span  id="hpStat" style={{ width: `${hp}%` }}></span>
+              <span id="hpStat" style={{ width: `${hp}%` }}></span>
             </div>
           </div>
           <div className="f20 powerBarContainer">
@@ -112,12 +112,16 @@ const PokemonCard = (props, { myDeck, addToDeck, removeFromDeck }) => {
         </div>
       </div>
       {props.showModal ? (
-        <div className="handleCardButton hoverCursor" onClick={addCard}>
-          Add
+        <div className="handleCardButton ">
+          <div onClick={addCard} className="hoverCursor">
+            Add
+          </div>
         </div>
       ) : (
-        <div className="handleCardButton hoverCursor" onClick={removeCard}>
-          X
+        <div className="handleCardButton ">
+          <div onClick={removeCard} className="hoverCursor">
+            X
+          </div>
         </div>
       )}
     </div>

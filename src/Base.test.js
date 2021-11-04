@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import store from "./Redux/store";
 import App from "./App";
 import { toBeInTheDocument, toHaveProperty } from "@testing-library/jest-dom";
-import { fireEvent, queryByAttribute } from "@testing-library/dom";
+import { fireEvent } from "@testing-library/dom";
 import PokemonCard from "./Components/UI/PokemonCard";
 
 test("is correct render", () => {
@@ -18,7 +18,7 @@ test("is correct render", () => {
   expect(title).toBeInTheDocument();
 });
 
-test("is render correct pokemonCard correct", () => {
+test("is render correct pokemonCard", () => {
   let mockPokemon = {
     id: "001",
     name: "hello",

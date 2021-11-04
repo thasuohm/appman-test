@@ -62,7 +62,7 @@ test("is render correct pokemonCard correct", () => {
  
 });
 
-test("is wrong logic cal stat", () => {
+test("is wrong search", () => {
   render(
     <Provider store={store}>
       <Modal />
@@ -75,7 +75,7 @@ test("is wrong logic cal stat", () => {
   expect(searchBox.value).toBe("fire");
 });
 
-test("is render correct pokemon info", () => {
+test("is calStat wrong", () => {
   let mockPokemon = {
     id: "002",
     name: "testStat",

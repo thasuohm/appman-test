@@ -18,7 +18,7 @@ test("is correct render", () => {
   expect(title).toBeInTheDocument();
 });
 
-test("is render correct pokemon info", () => {
+test("is render correct pokemonCard correct", () => {
   let mockPokemon = {
     id: "001",
     name: "hello",
@@ -58,7 +58,7 @@ test("is render correct pokemon info", () => {
   expect(weakCal.style).toHaveProperty("width", "100%");
 });
 
-test("is search correctly", () => {
+test("is wrong logic cal stat", () => {
   render(
     <Provider store={store}>
       <Modal />
@@ -69,4 +69,53 @@ test("is search correctly", () => {
 
   fireEvent.change(searchBox, { target: { value: "fire" } });
   expect(searchBox.value).toBe("fire");
+});
+
+test("is render correct pokemon info", () => {
+  let mockPokemon = {
+    id: "002",
+    name: "testStat",
+    hp: "50aaa",
+    attacks: [
+      {
+        cost: ["Psychic", "Colorless", "Colorless"],
+        name: "Psychic Burst",
+        text: "",
+        damage: "asd+",
+        convertedEnergyCost: 3,
+      },
+      {
+        cost: ["Psychic", "Colorless", "Colorless"],
+        name: "Psychic Burst2",
+        text: "",
+        damage: "asd+",
+        convertedEnergyCost: 3,
+      },
+      {
+        cost: ["Psychic", "Colorless", "Colorless"],
+        name: "Psychic Burst3",
+        text: "",
+        damage: "asd+",
+        convertedEnergyCost: 3,
+      },
+    ],
+    weaknesses: [
+      {
+        type: "Psychic",
+        value: "×2",
+      },
+    ],
+  };
+
+  render(
+    <Provider store={store}>
+      <PokemonCard pkc={mockPokemon} />
+    </Provider>
+  );
+
+  const hpCal = document.getElementById("hpStat");
+  expect(hpCal.style).toHaveProperty("width", "0%");
+
+  const strCal = document.getElementById("strStat");
+  expect(strCal.style).toHaveProperty("width", "0%");
 });

@@ -52,6 +52,7 @@ const Modal = (props, { myDeck }) => {
     axios.get(url).then((res) => {
       removeExist(res.data.cards);
     });
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {

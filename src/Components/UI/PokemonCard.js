@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { connect } from "react-redux";
 import cute from "../../cute.png";
 import { addToDeck, removeFromDeck } from "../../Redux/deckAction.js";
+import '../../css/pokemoncard.css'
 
 const PokemonCard = (props, { myDeck, addToDeck, removeFromDeck }) => {
   const addCard = () => {

@@ -3,6 +3,7 @@ import PokemonCard from "./PokemonCard";
 import search from "../../search.png";
 import axios from "axios";
 import { connect } from "react-redux";
+import "../../css/modal.css";
 
 const Modal = (props, { myDeck }) => {
   const [pokemonCard, setPokemonCard] = useState([]);

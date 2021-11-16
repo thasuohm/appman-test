@@ -1,0 +1,43 @@
+
+
+.titleBar {
+    position: absolute;
+    font-size: 36px;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #ffffff;
+  }
+  
+  .bottomContainer {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .bottomBar {
+    box-shadow: #d9333387;
+    background-color: #ec5656;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: 60px;
+  }
+  
+  .circleBottom {
+    box-shadow: #d9333387;
+    background-color: #ec5656;
+    color: #ffffff;
+    font-size: 60px;
+    width: 10%;
+    margin: 0 auto;
+    border-radius: 50%;
+    border-style: solid #ec5656;
+    z-index: 2;
+    text-align: center;
+    outline: none;
+  }
+  
+  

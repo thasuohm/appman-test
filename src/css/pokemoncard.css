@@ -1,0 +1,84 @@
+.cardContainer {
+  max-width: 900px;
+  width: auto;
+  background-color: #f3f4f7;
+  margin: 20px 15px;
+  box-shadow: 0 0 10px #d5d6dc;
+  display: flex;
+  padding: 10px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.cardContainer img {
+  height: 200px;
+  width: auto;
+}
+
+.cardContainer:hover {
+  box-shadow: 0 0 10px #aeaeae;
+}
+
+.handleCardButton {
+  display: hidden;
+  color: #f3f4f7;
+  font-size: 24px;
+}
+
+.cardContainer:hover > .handleCardButton {
+  display: block;
+  left: 70%;
+  color: #ec5656;
+  font-size: 24px;
+}
+
+.cardContent {
+  display: flex;
+  width: 100%;
+}
+
+.pokemonInfo {
+  max-width: 500px;
+  width: 100%;
+}
+
+.pokemonInfo img {
+  padding-top: 5px;
+  width: 50px;
+  height: auto;
+}
+
+.pokemonName {
+  font-size: 34px;
+  font-family: "Gaegu", cursive;
+}
+
+.powerBarContainer {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+  max-width: 450px;
+  width: 90%;
+}
+
+.powerBarContainer > span {
+  width: 80px;
+  margin-left: -15px;
+}
+
+.powerBar {
+  height: 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  background-color: #e4e4e4;
+  box-shadow: #d4d4d4;
+}
+
+.powerBar > span {
+  display: block;
+  height: 100%;
+  border-radius: 19px;
+  background-color: #f3701a;
+  z-index: 2;
+}

@@ -1,0 +1,18 @@
+
+
+.myDeck {
+    display: grid;
+    padding-top: 60px;
+    width: 100%;
+    height: 87%;
+    position: absolute;
+    grid-template-columns: auto auto;
+    overflow-y: scroll;
+  }
+  
+  .deckItem {
+    width: 500px;
+    margin: 5px;
+  }
+
+  

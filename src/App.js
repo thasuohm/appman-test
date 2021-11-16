@@ -4,6 +4,7 @@ import BottomBar from "./Components/UI/BottomBar";
 import Modal from "./Components/UI/Modal";
 import MyDeck from "./Components/UI/MyDeck";
 import Title from "./Components/UI/Title";
+import "./css/layout.css";
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
